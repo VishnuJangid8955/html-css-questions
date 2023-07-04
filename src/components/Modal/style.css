@@ -1,3 +1,13 @@
 .modal{
-    
+    /* display: flex; */
+    position: absolute;
+    top: 0px;
+    max-height: 50%;
+    max-width: 50%;
 }
+
+.modal-header {
+    position: absolute;
+}
+
+

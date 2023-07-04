@@ -3,7 +3,7 @@ import './App.css';
 import Modal from './components/Modal';
 
 function App() {
-  const [show, setShow] = useState(false);
+  const [show, setShow] = useState(true);
   return (
     <div className="App">
       {show && <Modal />}

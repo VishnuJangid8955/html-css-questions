@@ -1,14 +1,18 @@
-import { useState } from 'react';
-import './App.css';
-import Modal from './components/Modal';
+import { useState } from "react";
+import "./App.css";
+// import Modal from "./components/Modal";
+import ModalAbsolute from "./components/ModalAbsolute";
 
 function App() {
-  const [show, setShow] = useState(true);
+  const [show, setShow] = useState(false);
   return (
-    <div className="App">
-      {show && <Modal />}
-      <button>Show Modal</button>
-    </div>
+    <>
+      {show && <ModalAbsolute />}
+      <div className="App">
+        {/* {show && <Modal />} */}
+        <button onClick={() => setShow(!show)}>Show Modal</button>
+      </div>
+    </>
   );
 }
 

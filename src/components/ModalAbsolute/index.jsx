@@ -1,6 +1,6 @@
 import "./style.css";
 
-const Modal = () => {
+const ModalAbsolute = () => {
   return (
     <div className="modal">
       <div className="modal-content">
@@ -10,6 +10,18 @@ const Modal = () => {
         <div className="modal-body">
           <input as="text" />
           <input />
+          <div>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis
+            voluptatibus consequuntur officia mollitia ab commodi maxime vero
+            similique iusto deserunt itaque dolores est at neque non velit
+            ducimus, natus illum.
+          </div>
+          <div>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis
+            voluptatibus consequuntur officia mollitia ab commodi maxime vero
+            similique iusto deserunt itaque dolores est at neque non velit
+            ducimus, natus illum.
+          </div>
           <div>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis
             voluptatibus consequuntur officia mollitia ab commodi maxime vero
@@ -62,4 +74,4 @@ const Modal = () => {
   );
 };
 
-export default Modal;
+export default ModalAbsolute;

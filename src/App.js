@@ -1,18 +1,12 @@
 import { useState } from "react";
 import "./App.css";
+import Accordion from "./components/Accordion";
 // import Modal from "./components/Modal";
-import ModalAbsolute from "./components/ModalAbsolute";
+// import ModalAbsolute from "./components/ModalAbsolute";
 
 function App() {
-  const [show, setShow] = useState(false);
   return (
-    <>
-      {show && <ModalAbsolute />}
-      <div className="App">
-        {/* {show && <Modal />} */}
-        <button onClick={() => setShow(!show)}>Show Modal</button>
-      </div>
-    </>
+    <Accordion />
   );
 }
 

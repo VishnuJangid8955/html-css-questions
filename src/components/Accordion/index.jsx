@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./style.css";
 
 const Accordion = () => {
@@ -6,19 +6,39 @@ const Accordion = () => {
   const [data, setData] = useState([1, 2, 3, 4, 5]);
   const [activeIndex, setActiveIndex] = useState(null);
 
-
   const handleActive = (index) => {
     setActiveIndex(index);
-    if(activeIndex && activeIndex === index) {
-        setActive(!active);
+    if (activeIndex && activeIndex === index) {
+      setActive(!active);
     }
-  }
+  };
+
+  useEffect(() => {
+    let timeId = setInterval(() => {
+      setActiveIndex((prev) => {
+        const nextIndex = prev + 1;
+        if (nextIndex > data.length - 1) {
+          return 0;
+        }
+
+        return nextIndex;
+      });
+
+      if (active) {
+        setActive(true);
+      }
+    }, 5000);
+
+    return () => {
+        clearInterval(timeId);
+    }
+  }, [active, data.length]);
 
   return (
     <div className="accordion">
       {data.map((item, index) => (
         <div key={index} className="accordion-item">
-          <div onClick={()=> handleActive(index)} className="accordion-header">
+          <div onClick={() => handleActive(index)} className="accordion-header">
             <div>{item}</div>
             <svg
               xmlns="http://www.w3.org/2000/svg"

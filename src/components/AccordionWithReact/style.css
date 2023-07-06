@@ -1,0 +1,36 @@
+.accordion {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.accordion-item {
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+.accordion-item:first-child {
+    border-radius: 5px 5px 0 0;
+}
+
+.accordion-item:last-child {
+    border-radius: 0 0 5px 5px;
+}
+
+.accordion-toggle {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.accordion-panel {
+    display: none;
+    justify-content: space-between;
+    border-top: 1px solid #ccc;
+    padding: 10px;
+}
+
+.show {
+    display: flex;
+    transition: 2s;
+}

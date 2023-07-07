@@ -1,0 +1,25 @@
+.carousel {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 80px;
+    background-color: #0f7451;
+    gap: 86px;
+    padding: 32px;
+    padding-left: 86px;
+    border-radius: 10px;
+}
+
+img {
+    width: 150px;
+    border-radius: 10px;
+    transform: scale(1.5);
+}
+
+.carousel-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+

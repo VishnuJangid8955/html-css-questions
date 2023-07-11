@@ -1,15 +1,17 @@
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import "./style.css";
 
 const Accordion = () => {
   const [active, setActive] = useState(false);
-  const [data, setData] = useState([1, 2, 3, 4, 5]);
-  const [activeIndex, setActiveIndex] = useState(null);
+  const data = useMemo(() => [1, 2, 3, 4, 5], []);
+  const [activeIndex, setActiveIndex] = useState(0);
 
   const handleActive = (index) => {
     setActiveIndex(index);
     if (activeIndex && activeIndex === index) {
-      setActive(!active);
+      setActive((prev) => !prev);
+    } else {
+      setActive(true);
     }
   };
 
@@ -24,14 +26,14 @@ const Accordion = () => {
         return nextIndex;
       });
 
-      if (active) {
+      if (!active) {
         setActive(true);
       }
     }, 5000);
 
     return () => {
-        clearInterval(timeId);
-    }
+      clearInterval(timeId);
+    };
   }, [active, data.length]);
 
   return (
@@ -44,13 +46,13 @@ const Accordion = () => {
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
-              stroke-width="1.5"
+              strokeWidth="1.5"
               stroke="currentColor"
-              className="icon"
+              className="accordion-icon"
             >
               <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 d="M19.5 8.25l-7.5 7.5-7.5-7.5"
               />
             </svg>

@@ -8,7 +8,13 @@ import Carousel from "./components/Carousel";
 
 function App() {
   return (
+    <>
+    {/* <Modal /> */}
+    {/* <ModalAbsolute /> */}
+    {/* <Accordion /> */}
+    {/* <AccordionWithReact /> */}
     <Carousel />
+    </>
   );
 }
 

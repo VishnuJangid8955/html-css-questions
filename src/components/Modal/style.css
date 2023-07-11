@@ -1,10 +1,27 @@
-/* .modal {
+.btn-open-modal {
+  background-color: #0f7451;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.open-modal{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 25px;
+}
+
+.modal {
   position: fixed;
   left: 0;
   top: 0;
   z-index: 1;
   height: 100%;
-  padding: 30px;
+  padding: 20px;
   background-color: rgba(0, 0, 0, 0.4);
   overflow-y: auto;
 }
@@ -23,7 +40,7 @@
 }
 
 .modal-body {
-  max-height: 60vh;
+  max-height: 40vh;
   padding: 10px;
   overflow-y: auto;
   color: #000;
@@ -33,10 +50,19 @@
 .modal-footer {
   display: flex;
   justify-content: flex-end;
-  padding: 20px;
 }
 
-button {
+.modal-footer button {
     margin: 10px;
     font-size: 20px;
-} */
+    background-color: grey;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.modal-footer button:first-child {
+  background-color: #0f7451;
+  color: white;
+}

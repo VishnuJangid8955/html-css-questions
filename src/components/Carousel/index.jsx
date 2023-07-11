@@ -22,7 +22,7 @@ const Carousel = () => {
       image: carouselImg2,
       text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil non necessitatibus sit dolorem voluptates suscipit autem quisquam, consequuntur assumenda repellendus!",
     },
-  ]);
+  ], []);
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handleLeftClick = () => {

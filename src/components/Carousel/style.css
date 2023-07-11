@@ -51,5 +51,26 @@ img {
     right: -18px;
 }
 
-.dots {}
+.dots {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+}
 
+/* .dots button:first-child{
+    background-color: #0f7451;
+} */
+
+.dot {
+    border: 2px solid #0f7451;
+    margin: 10px 2px;
+    padding: 3px;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot-active {
+    background-color: #0f7451;
+}

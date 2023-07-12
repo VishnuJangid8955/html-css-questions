@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
-import Carousel from "./components/Carousel";
+// import Carousel from "./components/Carousel";
+import Table from "./components/Table";
 // import AccordionWithReact from "./components/AccordionWithReact";
 // import Accordion from "./components/Accordion";
 // import Modal from "./components/Modal";
@@ -9,11 +10,12 @@ import Carousel from "./components/Carousel";
 function App() {
   return (
     <>
-    {/* <Modal /> */}
-    {/* <ModalAbsolute /> */}
-    {/* <Accordion /> */}
-    {/* <AccordionWithReact /> */}
-    <Carousel />
+      {/* <Modal /> */}
+      {/* <ModalAbsolute /> */}
+      {/* <Accordion /> */}
+      {/* <AccordionWithReact /> */}
+      {/* <Carousel /> */}
+      <Table />
     </>
   );
 }

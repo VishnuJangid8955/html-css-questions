@@ -1,4 +1,40 @@
 .table {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 100px auto;
+}
+
+.thead {
+    background-color: #0f7451;
+    color: white;
+}
+
+.tr {
+  display: grid;
+  grid-template-columns: 15% 1fr 1fr 1fr;
+}
+
+.th {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.th, .td {
+    text-align: left;
+    padding: 12px 22px;
+    vertical-align: inherit;
+}
+
+.tbody {
+    display: flex;
+    flex-direction: column;
+}
+
+.tbody .tr:nth-child(odd) {
+    background-color: #f8f9fa;
+}
+
+.tbody .tr:nth-child(even) {
+    background-color: #e9ecef;
 }

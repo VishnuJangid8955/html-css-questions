@@ -1,6 +1,24 @@
-.test {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 32px;
+table {
+  width: 80%;
+  margin: 60px auto;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: #0f7451;
+  color: white;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 12px 20px;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #f8f9fa;
+}
+
+tr:nth-child(even) {
+  background-color: #e9ecef;
 }

@@ -1,7 +1,7 @@
-import { useState } from "react";
 import "./App.css";
+import TableWithGrid from "./components/TableWithGrid";
 // import Carousel from "./components/Carousel";
-import Table from "./components/Table";
+// import Table from "./components/Table";
 // import AccordionWithReact from "./components/AccordionWithReact";
 // import Accordion from "./components/Accordion";
 // import Modal from "./components/Modal";
@@ -15,7 +15,8 @@ function App() {
       {/* <Accordion /> */}
       {/* <AccordionWithReact /> */}
       {/* <Carousel /> */}
-      <Table />
+      {/* <Table /> */}
+      <TableWithGrid />
     </>
   );
 }
